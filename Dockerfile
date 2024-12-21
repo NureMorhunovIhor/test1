@@ -8,6 +8,6 @@ FROM eclipse-temurin:21-alpine
 
 COPY --from=build /app/target/*.jar demo.jar
 
-EXPOSE 8081
+EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "demo.jar"]
